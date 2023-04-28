@@ -1,0 +1,67 @@
+.container{
+    padding: 8px 90px;
+}
+.container p{
+    line-height: 1.8;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container img{
+    max-height: 400px;
+    max-width: 450px;
+}
+
+.share-btn-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.share-btn-container a i{
+    font-size: 32px;
+}
+.share-btn-container a{
+    margin: 12px 0;
+    transition: 500ms; 
+}
+.share-btn-container a:hover{
+    transform: scale(1.2);
+}
+.share-btn-container .fa-facebook{
+    color: #1877f2;
+}
+.share-btn-container .fa-twitter{
+    color: #1da1f2;
+}
+.share-btn-container .fa-pinterest{
+    color: #e60023;
+}
+.share-btn-container .fa-linkedin{
+    color: #0077b5;
+}
+.share-btn-container .fa-whatsapp{
+    color: #075e54;
+}
+
+@media (max-width: 550px){
+    .container{
+        padding: 8px 32px;
+    }
+    .share-btn-container{
+        transform: unset;
+        top: unset;
+        left: 0;
+        bottom: 0;
+        flex-direction: row;
+        box-shadow: 4 0 8px rgba(0, 0, 0, 0.3);
+        padding: 12px;
+        justify-content: center;
+    }
+    .share-btn-container a{
+        margin: 0 32px;
+    }
+}
